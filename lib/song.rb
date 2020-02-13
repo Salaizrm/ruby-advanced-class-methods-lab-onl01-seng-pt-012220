@@ -58,6 +58,8 @@ class Song
   
   def self.create_from_filename(filename)
     result = self.create_from_filename(filename)
+    song = self.create
+    song 
     
   end
 end
