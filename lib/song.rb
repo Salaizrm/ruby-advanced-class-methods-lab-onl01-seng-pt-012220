@@ -43,7 +43,7 @@ class Song
   end
   
   def self.alphabetical
-   sort = self.all.sort_by {|w| w.song_name}
+   sort = self.all.sort_by {|w| w.name}
    sort
   end
     
