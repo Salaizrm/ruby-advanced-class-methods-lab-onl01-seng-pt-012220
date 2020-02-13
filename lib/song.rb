@@ -47,11 +47,14 @@ class Song
    sort
   end
     
-  def self.new_from_filename(filename)
-    result = self.new_from_filename(filename)
-    song = self.create
-    song.name = result.name
-    song.artist_name = result.artist_name
+ def self.new_from_filename(filename)
+    new_array = filename.split(" - ")
+    new_array[1] = new_array[1].chomp(".mp3")
+    song = self.new
+    song.name = new_array[1]
+    song.artist_name = new_array[0]
     song
   end
+  
+  
 end
