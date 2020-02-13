@@ -29,7 +29,7 @@ class Song
   end
   
   def self.find_by_name (song_name)
-    self.all.find {|songs|
-    song
+    result = self.all.find {|songs| 
+    result
   end
 end
